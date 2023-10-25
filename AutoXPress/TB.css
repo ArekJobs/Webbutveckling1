@@ -12,6 +12,7 @@
             padding: 10px;
             text-align: center;
             top: auto;
+            
         }
         
         .container {
@@ -46,6 +47,7 @@
             padding: 5px;
             align-items: center;
             box-shadow: 0px 5px 10px 0px #ff9900;
+
         }
         
         .items ul{
@@ -69,3 +71,4 @@
         .items ul li:hover{
             opacity: 0.5;
         }
+        
