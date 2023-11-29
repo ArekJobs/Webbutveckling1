@@ -79,3 +79,71 @@ footer {
     text-align: center;
     padding: 10px;
 }
+#carousel-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* styling for navigation buttons */
+  .carousel-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    padding: 10px;
+    outline: none;
+    user-select: none;
+  }
+  
+  #prev-btn {
+    left: 0;
+  }
+  
+  #next-btn {
+    right: 0;
+  }
+
+  /* dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+header.dark-mode {
+    background-color: #fff;
+}
+
+nav.dark-mode a {
+    color: #fff;
+}
+
+button.dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+
+
+
