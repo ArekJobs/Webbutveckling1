@@ -1,5 +1,5 @@
 
-/* Smooth scrolling nav-links*/ 
+// Smooth scrolling nav-links
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll("nav a");
 
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+// JS for carousel 
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -27,19 +28,28 @@ function showSlide(index) {
   carousel.style.transform = `translateX(${-index * slideWidth}px)`;
   currentIndex = index;
 }
-
+// PrevSlide
 function prevSlide() {
   currentIndex = (currentIndex - 1 + document.querySelectorAll('.carousel-item').length) % document.querySelectorAll('.carousel-item').length;
   showSlide(currentIndex);
 }
-
+// NextSlide 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % document.querySelectorAll('.carousel-item').length;
   showSlide(currentIndex);
 }
 
-// JavaScript for dark mode toggle
+// JS for dark mode toggle
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
+}
+
+// More JS for dark mode (Smooth transition)
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+  body.classList.toggle('dark-mode');
+  darkModeToggle.classList.toggle('dark-mode-toggle');
 }
 

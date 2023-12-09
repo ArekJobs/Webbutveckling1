@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArekJobs - Portfolio</title>
+    <!-- Links to CSS file-->
     <link rel="stylesheet" href="PortfolioStyle.css">
+    <!-- Links to JS file-->
     <script src="PortfolioFunktion.js"></script>
-</head>
+    <!-- Link for socialmedia button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
 <body>
     <header>
         <h1>Arek Jobs</h1>
         <nav>
+            <!-- Nav bar buttons -->
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -18,14 +24,39 @@
             </ul>
         </nav>
         <!-- Dark mode button -->
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+          Darkmode
+        </button>
     </header>
     
+    <!-- About section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Info about self.</p>
+        <h2>About me</h2>
+        <div class="about">
+            <h2>Hello there!</h2>
+    <p>
+      I'm Arek Jobs, a passionate engineering student currently based in Sweden but originally from Poland. I'm currently immersed in my studies at Jensen Gymnasium Norra, where I'm honing my skills and knowledge in the field of engineering.
+    </p>
+
+    <p>
+      In the dynamic world of academia, I find joy in learning and applying innovative solutions to real-world problems. My journey in engineering has been nothing short of exciting, and I am constantly seeking opportunities to expand my horizons.
+    </p>
+
+    <p>
+      As a part of my academic endeavors, I had the opportunity to showcase my skills through a compelling school project during my second grade. The website you are exploring is a result of my dedication and hard work, reflecting my commitment to excellence in both design and functionality.
+    </p>
+
+    <p>
+      Beyond the realms of academics, I am an individual driven by curiosity and creativity. My goal is to contribute meaningfully to the world of engineering and technology, and this portfolio serves as a testament to my journey so far.
+    </p>
+
+    <p>
+      Thank you for visiting, and feel free to explore my projects and experiences. If you have any questions or would like to connect, don't hesitate to <a href="#contact">reach out</a>. Let's build a future together, one innovative project at a time!
+    </p>
+        </div>
     </section>
     
+    <!-- Portfolio section -->
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="project">
@@ -38,32 +69,46 @@
                 <button class="carousel-btn" id="prev-btn" onclick="prevSlide()">❮</button>
                 <button class="carousel-btn" id="next-btn" onclick="nextSlide()">❯</button>
               </div>
+            <!-- Info about project -->
+              <h3>AutoXPress website</h3>
+            <p>Welcome to AutoXpress, your go-to destination for exploring the fascinating world of automobiles. My website, designed with a sleek and simple HTML interface enhanced by Bootstrap, is crafted exclusively for passionate car enthusiasts seeking to delve into the diverse universe of automobiles. 
+            </p>
+            
+            <p>Discover the beauty and performance of various car types through my intuitive navigation bar, offering links to SUVs, Coupes, Sedans, Sports cars, Muscle cars, Roadsters, and Hatchbacks. Each link leads to a dedicated page filled with detailed information about the specific car category.
+            </p>
 
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+            <p>Immerse yourself in the captivating visual experience provided by my image carousel, showcasing stunning photos of iconic cars such as the Porsche 718 Cayman GT4 RS (2020), Audi RS3 (2022), and Ford Mustang Darkhorse (2024). Each image is accompanied by informative captions, allowing you to learn more about these exceptional automotive marvels.
+            </p>
+
+            <P>Explore my website's informative content sections, where you'll find insights about the site itself, highlighting its purpose as a user-friendly platform tailored for car lovers seeking to deepen their knowledge of automobiles.
+            </P>
+
+            <p>Whether you're a seasoned car aficionado or just beginning your journey into the world of cars, AutoXpress is here to fuel your passion. Enjoy the simplicity of my design, the richness of my content, and the immersive experience as you navigate through the exciting realm of automobiles.
+            </p>
+            
         </div>
         
-        <div class="working_on">
+        <!-- Working on section -->
+        <h2>working on</h2>
+        <div class="working-on">
             <img src="working_on.jpg" alt="working">
             <h3>Working on</h3>
             <p>Description of working on.</p>
         </div>
     </section>
     
+    <!-- Contact info and socialmedia links-->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Contact information and a contact form can be added here.</p>
+        <a href="https://www.linkedin.com/in/arek-jobs-a40367291/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/arekjobs/" class="fa fa-instagram"></a>
+        <P>Email: jobsarek700@gmail.com</P>
     </section>
     
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Arek Jobs</p>
-        <p><a href="https://www.instagram.com/arekjobs/">Instagram</a></p>
-        <p><a href="https://github.com/ArekJobs">Github</a></p>
+        <p>This website is mad for a school project.</p>
     </footer>
 
 
